@@ -23,7 +23,6 @@ const SearchManufacturer = ({
             .replace(/\s+/g, '')
             .includes(query.toLocaleLowerCase().replace(/\s+/g, ''))
         )
-  console.log({ manufacturer })
   return (
     <div className='search-manufacturer'>
       <Combobox value={manufacturer} onChange={setManufacturer} nullable>
